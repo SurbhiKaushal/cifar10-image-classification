@@ -1,3 +1,5 @@
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.models import Sequential
@@ -39,3 +41,4 @@ plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.legend()
 plt.show()
+
