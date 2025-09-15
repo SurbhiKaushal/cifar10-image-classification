@@ -16,7 +16,19 @@ I normalized the images by scaling the pixel values from 0–255 to 0–1, which
 7. Plotted the training and validation accuracy to understand the learning process.
 
 ## Results
-After training the model, it achieved a test accuracy of around **XX%** (replace this with your actual result after running the code). The accuracy graph shows how the model improved over the course of training, which confirms that the model is learning effectively.
+After training the model, it achieved a test accuracy of around 69%. The accuracy graph shows how the model improved over the course of training, which confirms that the model is learning effectively.
 
 ## How to Run
-1. Make sure you have Python installed along with TensorFlow and Matplotlib. You can install them using:
+1. Make sure you have Python installed along with TensorFlow and Matplotlib. You can install them using: pip install tensorflow matplotlib
+2. Download or clone this repository to your local machine.
+3. Run the script by executing the following command in the terminal or command prompt: python main.py
+4. The program will load the CIFAR-10 dataset, preprocess the data, train the CNN model for 10 epochs, and display sample images along with the final accuracy and accuracy graph.
+
+## Key Takeaways
+
+- Normalizing image data and one-hot encoding labels are essential preprocessing steps that help the model train effectively.
+- Convolutional Neural Networks (CNNs) are powerful tools for image classification tasks and can achieve good accuracy with relatively simple architectures.
+- Monitoring training and test accuracy over epochs helps to understand the model’s learning progress and detect overfitting.
+- Even with a basic CNN, the model achieved around 69% test accuracy, demonstrating the importance of structured preprocessing and training methods.
+
+
